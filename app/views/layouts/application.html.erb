@@ -9,23 +9,30 @@
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
-  </head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        crossorigin="anonymous">
+    </head>
 
   <body>
-  <p class="notice"><%= notice %></p>
-       <p class="alert"><%= alert %></p>
-       
-       <%#= image_tag(current_user.photo)  %>
+        <div class = "d-flex">
+        <div class= "w-20"><%= render 'layouts/sidebar' %></div>
+        <div class= "w-100"><%= render 'layouts/header' %> </div>
+
+      
+        <%#= image_tag(current_user.photo)  %>
        <%#= image_tag(current_user.cover_image) %>
-       <% if user_signed_in? %>
-       <%=link_to 'Logout', destroy_user_session_path, method: :delete, class: 'button' %>
-       <%= link_to "New Opinion", new_opinion_path, class:"button is-info" %> 
-        <p class="control"> <%= link_to current_user.username, edit_user_registration_path, class: "button is-info" %> </p>
-         <% else %>
-        <%= link_to 'Sign In', new_user_session_path, class: "button is-info" %> 
-        <%= link_to 'Sign Up', new_user_registration_path, class: "button is-info" %> 
-        <% end %>
+       <%# if user_signed_in? %>
+       <%#=link_to 'Logout', destroy_user_session_path, method: :delete, class: 'button' %>
+       <%#= link_to "New Opinion", new_opinion_path, class:"button is-info" %> 
+        <p class="control"> <%#= link_to current_user.username, edit_user_registration_path, class: "button is-info" %> </p>
+         <%# else %>
+        <%#= link_to 'Sign In', new_user_session_path, class: "button is-info" %> 
+        <%#= link_to 'Sign Up', new_user_registration_path, class: "button is-info" %> 
+        <%# end %>
+        </div>
+        
     <%= yield %>
+    
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script> 
   </body>
