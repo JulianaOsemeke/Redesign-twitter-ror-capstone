@@ -21,6 +21,8 @@ gem 'rubocop', '>= 1.0', '< 2.0'
 gem 'cloudinary'
 gem 'devise'
 gem 'hirb'
+gem 'carrierwave'
+gem 'mini_magick'
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 4.0'
 # Use Active Model has_secure_password
