@@ -5,17 +5,17 @@
 
   <div class="field">
     <%= f.label :username %><br />
-    <%= f.text_field :username, autofocus: true, autocomplete: "username" %>
+    <%= f.text_field :username,required: true, autofocus: true, autocomplete: "username" %>
   </div>
 
   <div class="field">
     <%= f.label :fullname %><br />
-    <%= f.text_field :fullname, autofocus: true, autocomplete: "fullname" %>
+    <%= f.text_field :fullname,required: true, autofocus: true, autocomplete: "fullname" %>
   </div>
 
   <div class="field">
     <%= f.label :email %><br />
-    <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
+    <%= f.email_field :email,required: true, autofocus: true, autocomplete: "email" %>
   </div>
 
   <div class="field">
@@ -29,6 +29,16 @@
   <div class="field">
     <%= f.label :password_confirmation %><br />
     <%= f.password_field :password_confirmation, autocomplete: "new-password" %>
+  </div>
+ 
+  <div class="field ">
+  <%= f.label :photo %>
+  <%= f.file_field :photo, required: true, input_html: { autocomplete: "photo" }, direct_upload: true %> </div><br> 
+  </div>
+
+  <div class="field">
+  <%= f.label :cover_image %>
+  <%= f.file_field :cover_image, required: true, input_html: { autocomplete: "cover_image" }, direct_upload: true %> </div><br> 
   </div>
 
   <div class="actions">
