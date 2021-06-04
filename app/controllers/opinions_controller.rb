@@ -1,5 +1,6 @@
 class OpinionsController < ApplicationController
   before_action :set_opinion, only: %i[ show edit update destroy ]
+  before_action :authenticate_user!
 
   # GET /opinions or /opinions.json
   def index
@@ -12,7 +13,7 @@ class OpinionsController < ApplicationController
 
   # GET /opinions/new
   def new
-    @opinion = Opinion.new
+    @opinion = current_user.opinions.build
   end
 
   # GET /opinions/1/edit
@@ -21,7 +22,7 @@ class OpinionsController < ApplicationController
 
   # POST /opinions or /opinions.json
   def create
-    @opinion = Opinion.new(opinion_params)
+    @opinion = current_user.opinions.build(opinion_params)
 
     respond_to do |format|
       if @opinion.save
