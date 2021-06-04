@@ -1,0 +1,19 @@
+---
+development:
+  cloud_name: julianaosemeke
+  api_key: '266997712182365'
+  api_secret: 8W6h3bYZR9ia4vYtPVRN9nn-jq0
+  enhance_image_tag: true
+  static_file_support: false
+production:
+  cloud_name: julianaosemeke
+  api_key: '266997712182365'
+  api_secret: 8W6h3bYZR9ia4vYtPVRN9nn-jq0
+  enhance_image_tag: true
+  static_file_support: true
+test:
+  cloud_name: julianaosemeke
+  api_key: '266997712182365'
+  api_secret: 8W6h3bYZR9ia4vYtPVRN9nn-jq0
+  enhance_image_tag: true
+  static_file_support: false
