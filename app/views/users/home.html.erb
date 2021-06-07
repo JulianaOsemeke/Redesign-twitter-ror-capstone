@@ -1,0 +1,27 @@
+
+<div>
+<h2>Following</h2>
+<% @following.each do |follower| %>
+ <%= follower.email %>
+ <%= follower.username %>
+ <%= image_tag(follower.photo) %>
+ <%= image_tag(follower.cover_image) %>
+  <% end %>
+<p> <%= @following.length %> </p>
+
+
+
+<h2>Followers</h2>
+<% @followers.each do |follower| %>
+  <%= follower.email %>
+  <%= follower.username %>
+  <%= image_tag(follower.photo) %>
+  <%= image_tag(follower.cover_image) %>
+   <% end %>
+
+<p> <%= @followers.length %> </p>
+</div>
+
+
+
+</div>
