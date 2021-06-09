@@ -13,6 +13,118 @@
  *= require_tree .
  *= require_self
  */
- .navbar {
+
+@import './colors';
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: #ccc;
+}
+
+.flex-1 {
+  flex: 1;
+}
+
+.navbar {
   background-color: #1da1f2;
+}
+
+.follow-count {
+  padding: 15px 5px;
+  border-top: 1px dotted #676767;
+  border-bottom: 1px dotted #676767;
+
+  & > * {
+    border-left: 1px dotted #676767;
+
+    &:first-child {
+      border-left: none;
+    }
+  }
+}
+
+.notice,
+.alert {
+  padding: 15px;
+  text-align: center;
+  color: $color-light;
+
+  p {
+    margin: 0;
+  }
+}
+
+.notice {
+  background-color: $color-success;
+}
+
+.alert {
+  background-color: $color-alert;
+}
+
+.aside-links {
+  list-style: none;
+  margin: 0;
+  padding: 20px 0;
+
+  li {
+    padding: 10px 15px;
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+
+    .aside-link {
+      color: #fff;
+      position: relative;
+      display: block;
+      text-decoration: none;
+      margin-left: 10px;
+    }
+  }
+}
+
+.opinion-form-wrap {
+  background-color: $color-light;
+  padding: 20px;
+  border-radius: 5px;
+  margin-top: 20px;
+
+  input[type="text"] {
+    display: block;
+    width: 100%;
+    outline: none;
+    border: 1px solid #767676;
+    padding: 7px 15px;
+    border-radius: 3px;
+  }
+}
+
+.opinions-list {
+  padding: 20px;
+
+  .opinions-header {
+    margin-bottom: 25px;
+  }
+
+  .opinion-wrap {
+    padding: 15px 7px;
+    border-top: 1px dotted #767676;
+  }
+
+  .name-opinion-wrap {
+    margin-left: 15px;
+  }
+
+  .author-name {
+    font-weight: bold;
+    font-size: 1.2rem;
+  }
+}
+
+.profile-pic {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background-color: rgb(200, 216, 238);
 }

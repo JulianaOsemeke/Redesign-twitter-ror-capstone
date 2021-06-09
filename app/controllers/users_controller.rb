@@ -4,5 +4,7 @@ class UsersController < ApplicationController
     @user = current_user
     @following = @user.following
     @followers = @user.followers
+    @opinion   = @user.opinions.new
+    @opinions = Opinion.all.includes(:author)
   end
 end
