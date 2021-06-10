@@ -1,0 +1,13 @@
+<%= form_with(url: followings_path, method: :post) do |form| %>
+  <%= form.hidden_field :user_id, value: user.id %>
+  <div class="d-flex align-items-center mb-2 follow-wrap">
+    <div class="profile-pic rect lg me-3"></div>
+    <div class="flex-1">
+      <div class="name-button-wrap d-flex">
+        <div class="me-3"><%= user.fullname %></div>
+        <%= form.submit '+', class: 'follow-btn' %>
+      </div>
+      <div><%= at_name user %></div>
+    </div>
+  </div>
+<% end %>

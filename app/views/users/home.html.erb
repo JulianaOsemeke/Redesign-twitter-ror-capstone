@@ -21,6 +21,9 @@
           </main>
           <aside class="col-4 h-100">
             <h3 class="mt-3 h4">Who To Follow</h3>
+            <div>
+              <%= can_follows(@user, @users) %>
+            </div>
           </aside>
         </div>
       </div>

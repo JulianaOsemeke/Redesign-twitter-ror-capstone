@@ -1,14 +1,11 @@
 <div class="bg-dark text-light h-100">
-  <div class="d-flex align-items-center p-3">
-    <div class="profile-pic"></div>
-    <div class="current_user_name ms-3"><%= @user.username %></div>
-  </div>
+  <%= render 'profile', user: @user %>
   <div class="d-flex text-center follow-count">
-    <div class="flex-1">
+    <div class="flex-1 cell">
       <div><%= @following.length %></div>
       <div>FOLLOWING</div>
     </div>
-    <div class="flex-1">
+    <div class="flex-1 cell">
       <div><%= @followers.length %></div>
       <div>FOLLOWERS</div>
     </div>
@@ -20,7 +17,7 @@
     </li>
     <li>
       <i class="fa fa-user" aria-hidden="true"></i>
-      <a class="aside-link profile" href="#">Profile</a>
+      <%= link_to "Profile", users_show_path, class: "aside-link user" %>
     </li>
     <li>
       <i class="fa fa-home" aria-hidden="true"></i>

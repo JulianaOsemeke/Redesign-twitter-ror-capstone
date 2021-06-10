@@ -5,4 +5,8 @@ module ApplicationHelper
     html += "<div class='alert'><p>#{alert}</p></div>" if (notice.present?)
     html.html_safe
   end
+
+  def at_name(user)
+    "@#{user.username.downcase}"
+  end
 end

@@ -31,16 +31,21 @@ body {
 }
 
 .follow-count {
-  padding: 15px 5px;
+  padding: 0 5px;
   border-top: 1px dotted #676767;
   border-bottom: 1px dotted #676767;
 
-  & > * {
+  .cell {
     border-left: 1px dotted #676767;
+    padding: 15px 0;
 
     &:first-child {
       border-left: none;
     }
+  }
+
+  .label {
+    font-size: 0.7rem;
   }
 }
 
@@ -61,6 +66,15 @@ body {
 
 .alert {
   background-color: $color-alert;
+}
+
+.text-align-center {
+  text-align: center;
+}
+
+.screen {
+  width: 100vw;
+  height: 100vh;
 }
 
 .aside-links {
@@ -127,4 +141,112 @@ body {
   height: 48px;
   border-radius: 50%;
   background-color: rgb(200, 216, 238);
+
+  &.lg {
+    width: 56px;
+    height: 56px;
+  }
+
+  &.xlg {
+    width: 72px;
+    height: 72px;
+  }
+
+  &.rect {
+    border-radius: 10px;
+  }
+}
+
+.cover-picture-wrap {
+  width: 100%;
+  height: 120px;
+  background-color: #676767;
+
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.follow-wrap {
+  .name-button-wrap {
+    color: #14756b;
+    font-weight: bold;
+    font-size: 0.9rem;
+    line-height: 1.2rem;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+
+    .follow-btn {
+      outline: none;
+      border: none;
+      color: inherit;
+      font-size: 2rem;
+      width: 60px;
+      text-align: center;
+      background-color: transparent;
+    }
+  }
+}
+
+.center {
+  width: 400px;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 2px;
+}
+
+.form-wrap {
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  .field {
+    margin-bottom: 15px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    &.form-group {
+      .form-text {
+        outline: none;
+        border: none;
+        padding: 10px;
+        display: block;
+        width: 100%;
+        background-color: #e7eef0;
+      }
+    }
+  }
+
+  .block-btn {
+    display: block;
+    text-align: center;
+    outline: none;
+    border: none;
+    width: 100%;
+    padding: 12px;
+
+    &.blue {
+      background-color: blue;
+      color: #fff;
+    }
+  }
+
+  &.center {
+    &.registration {
+      width: 600px;
+      padding-top: 140px;
+      padding-bottom: 40px;
+    }
+  }
+}
+
+.center-child {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
