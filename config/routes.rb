@@ -4,5 +4,5 @@ Rails.application.routes.draw do
   devise_for :users, controllers: { registrations: 'registrations' } 
   resources :followings, only: [:create, :destroy]
   root 'users#home'
-  
+  get 'users/show'
 end
