@@ -6,8 +6,12 @@
     <div class="col-9">
       <%= render "users/header" %>
       <div class="container-flex">
+      
         <div class="row">
           <main class="col-8">
+          <div class="cover-picture-wrap">
+             <%= image_tag("logos/novels.jpeg") %>
+            </div>
             <div class="opinion-form-wrap">
               <h3>Opinion</h3>
               <%= form_with model: @opinion do |form| %>

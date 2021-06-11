@@ -19,4 +19,3 @@ def find_user
 end
 
 end
-
