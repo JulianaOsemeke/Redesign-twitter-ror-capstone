@@ -17,7 +17,7 @@ This is a ruby on rails capstone project that entails building a social media ap
 
 ## Live Demo
 
-- [Live Demo Link](https://fierce-spire-26749.herokuapp.com/)
+- [Live Demo Link]()
 
 
 ## Getting Started
@@ -36,13 +36,6 @@ To set up this project and get it running locally, Ruby, Rails and all other rel
 - $ rails db:migrate
 ```
 
-
-### Run Tests
-
-- `$ rspec spec/models/user_spec.rb `
-- `$ rspec spec/models/opinion_spec.rb`
-- `$ rspec spec/feature/user_login_spec.rb`
-- `$ rspec spec/feature/opinion_create_spec.rb`
 
 ## Author
 
