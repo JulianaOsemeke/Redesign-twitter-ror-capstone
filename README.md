@@ -1,24 +1,61 @@
-# README
+![](https://img.shields.io/badge/Microverse-blueviolet)
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# Twitter-Redesign-Capstone
 
-Things you may want to cover:
+This is a ruby on rails capstone project that entails building a social media app with functionalities similar to Twitter. This app provides a platform for people to share opinions about books. Here, users can log in, view their homepage/opinions, suggested followers, gain access to their profiles and that of other followers, and then create opinions.
 
-* Ruby version
+![screenshot](./app/assets/images/logos/screenshot.png)
 
-* System dependencies
+## Built With
 
-* Configuration
+- Ruby -v 2.7.2
+- Rails -v 6.1.3.2
+- Devise
+- Bootstrap 5
+- PostgreSQL
+- RSPEC
 
-* Database creation
+## Live Demo
 
-* Database initialization
+- [Live Demo Link](https://fierce-spire-26749.herokuapp.com/)
 
-* How to run the test suite
 
-* Services (job queues, cache servers, search engines, etc.)
+## Getting Started
 
-* Deployment instructions
+### Prerequisites
 
-* ...
+To set up this project and get it running locally, Ruby, Rails and all other relevant gems must be installed in your system.
+**simple steps set up on your local machine**
+
+```
+- $ git clone `$ git clone git@github.com:JulianaOsemeke/Redesign-twitter-ror-capstone.git`
+- $ git checkout development
+- Run `cd Capstone`
+- $ bundle install
+- $ rails db:create
+- $ rails db:migrate
+```
+
+
+### Run Tests
+
+- `$ rspec spec/models/user_spec.rb `
+- `$ rspec spec/models/opinion_spec.rb`
+- `$ rspec spec/feature/user_login_spec.rb`
+- `$ rspec spec/feature/opinion_create_spec.rb`
+
+## Author
+
+👤 **Juliana Osemeke**
+
+- GitHub: [@JulianaOsemeke](https://github.com/JulianaOsemeke)
+- LinkedIn: [@juliana-osemeke](https://www.linkedin.com/in/juliana-osemeke/)
+- Twitter: [@JulianaOsemeke](https://twitter.com/JulianaOsemeke)
+
+````
+
+
+## Acknowledgment
+
+-[Gregoire Vella on Behance](https://www.behance.net/gregoirevella)
+
