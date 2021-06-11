@@ -47,7 +47,6 @@ To set up this project and get it running locally, Ruby, Rails and all other rel
 
 ````
 
-
 ## Acknowledgment
 
 -[Gregoire Vella on Behance](https://www.behance.net/gregoirevella)
