@@ -10,4 +10,10 @@ module UsersHelper
       users.map { |u| render 'profile', user: u }
     )
   end
+
+  def render_user_opinions(opinions)
+    safe_join(
+      opinions.map { |opinion| render 'opinions/opinion', opinion: opinion }
+    )
+  end
 end

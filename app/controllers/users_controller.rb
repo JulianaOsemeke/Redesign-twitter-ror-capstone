@@ -15,7 +15,7 @@ class UsersController < ApplicationController
     @followers = @user.followers
     @opinion = @user.opinions.new
     @opinions = Opinion.all.includes(:author)
-    @user_opinions = @user.opinions
+    @user_opinions = @user.opinions.all.includes(:author)
     @users = User.all
   end
 end

@@ -4,7 +4,7 @@ class FollowingsController < ApplicationController
 
   def create
     current_user.follow(@user)
-    redirect_to @user
+    redirect_to root_path
   end
 
   def destroy
@@ -15,6 +15,6 @@ class FollowingsController < ApplicationController
   private
 
   def find_user
-    @user = User.find(params([:user_id]))
+    @user = User.find_by_id(params[:user_id])
   end
 end
