@@ -10,7 +10,7 @@ class User < ApplicationRecord
   has_one_attached :photo
   has_one_attached :cover_image
 
-  has_many :opinions
+  has_many :opinions, dependent: :destroy
   has_many :active_followings, class_name: 'Following', foreign_key: 'follower_id', dependent: :destroy
   has_many :passive_followings, class_name: 'Following', foreign_key: 'followed_id', dependent: :destroy
 
