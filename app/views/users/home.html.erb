@@ -1,6 +1,6 @@
-<div class="container-fluid h-100">
-  <div class="row h-100">
-    <aside class="col-3 h-100">
+<div class="container-fluid">
+  <div class="row">
+    <aside class="col-3 d-flex">
       <%= render partial: "users/sidebar", local: { following: @following, followers: @followers } %>
     </aside>
     <div class="col-9">
@@ -9,10 +9,7 @@
       
         <div class="row">
           <main class="col-8">
-          <div class="cover-picture-wrap">
-             <%= image_tag("logos/novels.jpeg") %>
-            </div>
-            <div class="opinion-form-wrap">
+            <div class="opinion-form-wrap mt-sm">
               <h3>Opinion</h3>
               <%= form_with model: @opinion do |form| %>
                 <%= form.text_field :opinion %>

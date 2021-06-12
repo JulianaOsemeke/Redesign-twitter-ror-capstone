@@ -1,7 +1,8 @@
-<div class="bg-dark text-light h-100">
+<div class="bg-dark text-light flex-1 h-100">
   <%= render 'profile', user: @user %>
+  
   <div class="d-flex text-center follow-count">
-    <div class="flex-1 cell">
+  <div class="flex-1 cell">
       <div><%= @following.length %></div>
       <div>FOLLOWING</div>
     </div>

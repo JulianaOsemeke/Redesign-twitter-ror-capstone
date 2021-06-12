@@ -1,5 +1,5 @@
 <div class="opinion-wrap d-flex">
-  <div class="profile-pic"></div>
+  <div class="profile-pic"><%= image_tag(opinion.author.photo) %></div>
   <div class="name-opinion-wrap flex-1">
     <div class="author-name"><%= opinion.author.fullname %> </div>
     <div class="opinion"><%= opinion.opinion %></div>
