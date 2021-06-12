@@ -36,6 +36,8 @@ To set up this project and get it running locally, Ruby, Rails and all other rel
 - $ rails db:migrate
 ```
 
+- `bundle exec rails webpacker:install`
+
 
 ## Author
 
