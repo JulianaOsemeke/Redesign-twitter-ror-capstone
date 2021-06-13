@@ -17,7 +17,7 @@ This is a ruby on rails capstone project that entails building a social media ap
 
 ## Live Demo
 
-- [Live Demo Link](https://dashboard.heroku.com/apps/twitterredesignnew)
+- [Live Demo Link](https://twitterredesignnew.herokuapp.com/users/sign_in)
 
 
 ## Getting Started
