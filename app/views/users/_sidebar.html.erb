@@ -1,0 +1,28 @@
+<div class="bg-dark text-light flex-1 h-100">
+  <%= render 'profile', user: @user %>
+  
+  <div class="d-flex text-center follow-count">
+  <div class="flex-1 cell">
+      <div><%= @following.length %></div>
+      <div>FOLLOWING</div>
+    </div>
+    <div class="flex-1 cell">
+      <div><%= @followers.length %></div>
+      <div>FOLLOWERS</div>
+    </div>
+  </div>
+  <ul class="aside-links">
+    <li>
+      <i class="fa fa-home" aria-hidden="true"></i>
+      <%= link_to "Home", root_path, class: "aside-link home" %>
+    </li>
+    <li>
+      <i class="fa fa-user" aria-hidden="true"></i>
+      <%= link_to "Profile", users_show_path, class: "aside-link user" %>
+    </li>
+    <li>
+      <i class="fa fa-home" aria-hidden="true"></i>
+      <%=link_to 'Logout', destroy_user_session_path, method: :delete, class: "aside-link logout" %>
+    </li>
+  </ul>
+</div>

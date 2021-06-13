@@ -1,0 +1,9 @@
+<div class="d-flex align-items-center p-3">
+  <div class="profile-pic">
+  <%= image_tag(user.photo)  %>
+  </div>
+  <div class="name-wrap ms-3">
+    <div class="full-name"><%= user.fullname %></div>
+    <div class="at-name"><%= at_name user %></div>
+  </div>
+</div>
