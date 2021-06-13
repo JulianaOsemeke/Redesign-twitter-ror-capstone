@@ -2,7 +2,7 @@ require 'rails_helper'
 
 RSpec.describe User, type: :model do
   context 'validations' do
-    it 'fails on username not present' do
+    it 'fails when username not present' do
       user = User.new(fullname: 'Juliana', email: 'test@test.com', password: 'password',
                       password_confirmation: 'password')
       expect(user.valid?).to be false
@@ -20,7 +20,7 @@ RSpec.describe User, type: :model do
       expect(user.valid?).to be false
     end
 
-    it 'fails on fullname not present' do
+    it 'fails when fullname not present' do
       user = User.new(username: 'Juliana', email: 'test@test.com', password: 'password',
                       password_confirmation: 'password')
       expect(user.valid?).to be false

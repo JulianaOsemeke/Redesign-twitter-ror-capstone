@@ -7,7 +7,7 @@ RSpec.describe Opinion, type: :model do
   end
 
   context 'validations' do
-    it 'fails on opinion not present' do
+    it 'fails when opinion not present' do
       expect(Opinion.new(user_id: user.id).valid?).to be false
     end
 
