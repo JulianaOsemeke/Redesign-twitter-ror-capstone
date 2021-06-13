@@ -1,3 +1,5 @@
+# rubocop:disable Metrics/ClassLength
+
 require 'rails_helper'
 
 RSpec.describe User, type: :model do
@@ -62,8 +64,8 @@ RSpec.describe User, type: :model do
 
     it 'creates mutual follower - following relationship' do
       user1.active_followings.create(followed_id: user2.id)
-      expect(user1.following.all.map { |user| user.id }).to include user2.id
-      expect(user2.followers.all.map { |user| user.id }).to include user1.id
+      expect(user1.following.all.map(&:id)).to include user2.id
+      expect(user2.followers.all.map(&:id)).to include user1.id
     end
   end
 
@@ -79,8 +81,8 @@ RSpec.describe User, type: :model do
 
     it 'creates mutual follower - following relationship' do
       user1.follow(user2)
-      expect(user1.following.all.map { |user| user.id }).to include user2.id
-      expect(user2.followers.all.map { |user| user.id }).to include user1.id
+      expect(user1.following.all.map(&:id)).to include user2.id
+      expect(user2.followers.all.map(&:id)).to include user1.id
     end
   end
 
@@ -96,9 +98,9 @@ RSpec.describe User, type: :model do
 
     it 'destroys following relationship' do
       user1.follow(user2)
-      expect(user1.following.all.map { |user| user.id }).to include user2.id
+      expect(user1.following.all.map(&:id)).to include user2.id
       user1.unfollow(user2)
-      expect(user1.following.all.map { |user| user.id }).not_to include user2.id
+      expect(user1.following.all.map(&:id)).not_to include user2.id
     end
   end
 
@@ -119,3 +121,4 @@ RSpec.describe User, type: :model do
     end
   end
 end
+# rubocop:enable Metrics/ClassLength

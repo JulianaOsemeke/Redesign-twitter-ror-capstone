@@ -27,8 +27,8 @@ RSpec.describe Following, type: :model do
   context 'associations' do
     it 'creates mutual follower - following relationship' do
       Following.create(follower_id: user1.id, followed_id: user2.id)
-      expect(user1.following.all.map { |user| user.id }).to include user2.id
-      expect(user2.followers.all.map { |user| user.id }).to include user1.id
+      expect(user1.following.all.map(&:id)).to include user2.id
+      expect(user2.followers.all.map(&:id)).to include user1.id
     end
   end
 end
