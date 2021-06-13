@@ -17,14 +17,14 @@ This is a ruby on rails capstone project that entails building a social media ap
 
 ## Live Demo
 
-- [Live Demo Link]()
+- [Live Demo Link](https://dashboard.heroku.com/apps/twitterredesignnew)
 
 
 ## Getting Started
 
 ### Prerequisites
 
-To set up this project and get it running locally, Ruby, Rails and all other relevant gems must be installed in your system.
+- To set up this project and get it running locally, Ruby, Rails and all other relevant gems must be installed in your system.
 **simple steps set up on your local machine**
 
 ```
@@ -36,7 +36,10 @@ To set up this project and get it running locally, Ruby, Rails and all other rel
 - $ rails db:migrate
 ```
 
-- `bundle exec rails webpacker:install`
+
+### Run Tests
+
+- `$ rspec `
 
 
 ## Author
@@ -47,9 +50,8 @@ To set up this project and get it running locally, Ruby, Rails and all other rel
 - LinkedIn: [@juliana-osemeke](https://www.linkedin.com/in/juliana-osemeke/)
 - Twitter: [@JulianaOsemeke](https://twitter.com/JulianaOsemeke)
 
-````
+
 
 ## Acknowledgment
 
 -[Gregoire Vella on Behance](https://www.behance.net/gregoirevella)
-
